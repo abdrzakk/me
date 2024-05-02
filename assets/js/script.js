@@ -25,7 +25,7 @@ window.onload = () => {
             },
             {
                 element: instagram,
-                text: '3bdo.gg',
+                text: '3bdo.py',
             },
             {
                 element: discord,
@@ -51,15 +51,6 @@ window.onload = () => {
                 }
             }
         })
-        // * Visitor Counter
-        
-        if (localStorage.getItem("visitorCount") === null) {
-            localStorage.setItem("visitorCount", 0);
-        }
-        var count = parseInt(localStorage.getItem("visitorCount"));
-        count += 1;
-        localStorage.setItem("visitorCount", count);
-        document.getElementById("visitorCount").textContent = count;
     } catch (error) {
         if (error == "TypeError: Cannot set properties of null (setting 'textContent')") console.log()
         else alert(error)
